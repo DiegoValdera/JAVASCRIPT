@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTOS</title>
+    <style>
+        .container{
+            display: block;
+        }
+
+      .dropdown {
+        list-style: none;
+        background-color: rgb(247, 226, 230);
+        display: flex;
+        color: grey;
+        border-radius: 5px;
+      }
+      .dropdown li {
+        padding: 10px;
+        margin: 2px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+      }
+      .dropdown li:hover {
+        background-color: pink;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn {
+        background-color: pink;
+        font-weight: bold;
+        color: rgb(105, 104, 104);
+        padding: 10px 15px 10px 15px;
+        border-radius: 5px;
+        border: none;
+      }
+      .btn:hover {
+        color: #fff;
+        background-color: rgb(212, 84, 84);
+        cursor: pointer;
+      }
+
+      .input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+
+    <button class="js_btn1 btn">cerrar dropdown</button>
+    <div class="container">
+
+      <ul class="dropdown js_dropdown">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuato</li>
+      </ul>
+
+      <input
+        type="text"
+        class="js_input input"
+        placeholder="Escribir su usuario"
+      />
+    </div>
+    
+    <script src="./js/eventos.js"></script>
+  </body>
+</html>
