@@ -1,12 +1,16 @@
 body{
     font-family: sans-serif;
 }
+h2{
+    text-align: center;
+    color: grey;
+}
 form{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 5px;
     margin: auto;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 30px 50px;
 }
 form input{
   padding: 10px;
@@ -20,7 +24,7 @@ button{
     color: #fff;
     border-radius: 5px;
     border:none;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     font-size: 12px;
     font-weight: bold;
@@ -33,7 +37,7 @@ button:hover{
 
 table{
     width: 80%;
-    margin: 10px 50px 10px 50px;
+    margin: auto;
     color: grey;
     font-size: 12px;
     border: 1px solid rgb(226, 226, 226);
@@ -90,7 +94,7 @@ tbody button:hover{
     }
     form input{
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
     }
 
     table{
@@ -124,5 +128,19 @@ tbody button:hover{
         height: 25px;
         text-align: center;
         width: auto;
+    }
+    button{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+@media (min-width:500px) and (max-width:720px) {
+    form{
+        grid-template-columns: repeat(2,1fr);
+    }
+    button{
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
