@@ -1,0 +1,128 @@
+body{
+    font-family: sans-serif;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin: auto;
+    padding: 10px 50px 10px 50px;
+}
+form input{
+  padding: 10px;
+  border-radius: 5px;
+  border:1px solid grey;
+  color: grey;
+}
+button{
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(77, 130, 230);
+}
+
+table{
+    width: 80%;
+    margin: 10px 50px 10px 50px;
+    color: grey;
+    font-size: 12px;
+    border: 1px solid rgb(226, 226, 226);
+    text-align: center;
+    justify-content: center;
+}
+
+table thead{
+    background-color: mediumseagreen;
+    color: #fff;
+    font-weight: bold;
+}
+table thead tr td{
+    padding: 5px;
+    border: 1px solid rgb(226, 226, 226);
+}
+table tbody  td{
+    padding: 5px;
+    border: 1px solid rgb(226, 226, 226);
+}
+table tbody tr{
+    border: 1px solid grey;
+}
+table tbody tr:nth-child(2n){
+    background-color: rgba(240, 238, 238, 0.884);
+}
+table tbody tr:nth-last-child(2n):hover{
+    background-color: rgba(224, 220, 220, 0.884);
+}
+
+td i{
+    color: rgba(233, 51, 51, 0.767);
+    font-size: 17px;
+}
+td i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+tbody button{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+}
+tbody button:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/*RESPONSIVE*/
+
+@media (min-width:200px) and (max-width:500px) {
+    form{
+        gap:10px
+    }
+    form input{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    table{
+        width: 95%;
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        margin: auto;
+    }
+    
+
+    thead{
+        width: 70px;
+    }
+    thead tr{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 70px;
+    }
+    thead td{
+        height: 25px;
+    }
+
+    tbody{
+        display: flex;
+    }
+    tbody tr{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    tbody td{
+        height: 25px;
+        text-align: center;
+        width: auto;
+    }
+}
